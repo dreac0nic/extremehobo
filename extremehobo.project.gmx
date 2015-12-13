@@ -50,7 +50,9 @@
       <sprite>sprites\spr_Kheral</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_DirtGrassRocks</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_InitGlobalVariables.gml</script>
@@ -98,6 +100,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="prototype">
+      <room>rooms\room_playground</room>
+    </rooms>
     <rooms name="testing">
       <room>rooms\room_jump_tests</room>
       <room>rooms\room_movement_lab</room>
