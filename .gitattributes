@@ -1,3 +1,9 @@
+// CLRF Overrides for GMS
+*.ini text eol=crlf
+*.gmx text eol=crlf
+*.shader text eol=crlf
+
+// LFS Binary Handlings
 *.ttf filter=lfs diff=lfs merge=lfs -crlf
 *.png filter=lfs diff=lfs merge=lfs -crlf
 *.jpg filter=lfs diff=lfs merge=lfs -crlf
