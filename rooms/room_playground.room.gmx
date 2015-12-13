@@ -65,6 +65,12 @@
     <instance objName="obj_Kheral" x="288" y="352" name="inst_FB8FDCD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hud" x="32" y="-32" name="inst_F788AFEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Controller" x="64" y="-32" name="inst_A0C0F023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FeralKheral" x="480" y="224" name="inst_E51693F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ShortOldHobo" x="160" y="368" name="inst_9B7D2272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TallerOldHobo" x="192" y="352" name="inst_6AA6E330" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TallerOldHoboRight" x="224" y="352" name="inst_9271B268" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ChestUnopened" x="76" y="147" name="inst_677E949F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ChestOpened" x="41" y="147" name="inst_468172A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bck_DirtGrassRocks" x="0" y="384" w="32" h="32" xo="128" yo="0" id="10000003" name="inst_6D384E6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -46,8 +46,23 @@
       <sprite>sprites\spr_grey_2x2</sprite>
       <sprite>sprites\spr_grey_16x16</sprite>
     </sprites>
-    <sprites name="spr_Kheral">
+    <sprites name="Enemies">
       <sprite>sprites\spr_Kheral</sprite>
+      <sprite>sprites\spr_FeralKheral</sprite>
+    </sprites>
+    <sprites name="Chest">
+      <sprite>sprites\spr_ChestUnopened</sprite>
+      <sprite>sprites\spr_ChestOpened</sprite>
+    </sprites>
+    <sprites name="OldHobo">
+      <sprites name="Backup Sprites">
+        <sprite>sprites\spr_BeardBackup</sprite>
+        <sprite>sprites\spr_FirstAttemptHobo</sprite>
+        <sprite>sprites\spr_OldHoboBackup</sprite>
+      </sprites>
+      <sprite>sprites\spr_BetterOldHobo</sprite>
+      <sprite>sprites\spr_TallerOldHoboRight</sprite>
+      <sprite>sprites\spr_TallerOldHobo</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -92,11 +107,23 @@
       <object>objects\obj_Health4_4</object>
       <object>objects\obj_Health0_4</object>
     </objects>
-    <object>objects\obj_Init</object>
-    <object>objects\obj_Hud</object>
-    <object>objects\obj_Controller</object>
+    <objects name="Controllers">
+      <object>objects\obj_Init</object>
+      <object>objects\obj_Hud</object>
+      <object>objects\obj_Controller</object>
+    </objects>
     <objects name="Enemies">
       <object>objects\obj_Kheral</object>
+      <object>objects\obj_FeralKheral</object>
+    </objects>
+    <objects name="Chests">
+      <object>objects\obj_ChestUnopened</object>
+      <object>objects\obj_ChestOpened</object>
+    </objects>
+    <objects name="Hobo">
+      <object>objects\obj_ShortOldHobo</object>
+      <object>objects\obj_TallerOldHobo</object>
+      <object>objects\obj_TallerOldHoboRight</object>
     </objects>
   </objects>
   <rooms name="rooms">

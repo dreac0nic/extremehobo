@@ -8,31 +8,89 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_MovementPlayer">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>if distance_to_object(obj_MovementPlayer)&lt;50
+{player_seen=1}
+else
+{player_seen=0}
+</string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if distance_to_object(obj_MovementPlayer)&gt;50
+{player_seen=0}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_exists(obj_MovementPlayer)
+{if distance_to_object(obj_MovementPlayer)&lt;50 &amp;&amp; player_seen=1
+{direction=point_direction(x,y,obj_MovementPlayer.x,obj_MovementPlayer.y)
+image_angle=direction
+mp_potential_step(obj_MovementPlayer.x,obj_MovementPlayer.y,2,false)} // Set speed
+if distance_to_object(obj_MovementPlayer)&lt;50
+{player_seen=1
+alarm[0]=60}
+if player_seen=0
+{speed=0}}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_MovementPlayer">
       <action>
         <libid>1</libid>
         <id>711</id>

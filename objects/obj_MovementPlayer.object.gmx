@@ -169,6 +169,35 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>view_visible[0]=true; //make view visible
+width=640; //width of desired view
+height=480; //height of desired view
+
+//adjusting view width and height, as well as scale (port)
+view_wview[0]=width;
+view_hview[0]=height;
+view_wport[0]=width;
+view_hport[0]=height;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -293,29 +322,26 @@ if(vspeed &lt; 0) {
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_Kheral">
       <action>
         <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>//snap view x and y positions to object's coordinates, subtracting one-half the width and height to center it
+view_xview[0]=x-(view_wview[0]/2);
+view_yview[0]=y-(view_hview[0]/2); 
+</string>
           </argument>
         </arguments>
       </action>
