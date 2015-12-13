@@ -10,8 +10,7 @@
       <sprite>sprites\spr_aj_idle</sprite>
       <sprite>sprites\spr_aj_walk_init</sprite>
       <sprite>sprites\spr_aj_walk_loop</sprite>
-      <sprite>sprites\spr_aj_jump_init</sprite>
-      <sprite>sprites\spr_aj_jump_loop</sprite>
+      <sprite>sprites\spr_aj_jump</sprite>
       <sprite>sprites\spr_aj_fall_loop</sprite>
       <sprite>sprites\spr_aj_jump_end</sprite>
     </sprites>

@@ -152,7 +152,7 @@
 var delta = 0.000001*delta_time;
 
 // Check to see if grounded or not
-IsGrounded = collision_line(x, y, x, y + 1, obj_GrassPlatform, false, true);
+IsGrounded = place_meeting(x, y + 1, obj_GrassPlatform);
 
 // Apply jump if key is pressed!
 if(IsGrounded &amp;&amp; keyboard_check_pressed(global.Key_Jump)) {
@@ -190,9 +190,17 @@ if(place_meeting(x + hspeed, y, obj_GrassPlatform)) {
 }
 
 if(place_meeting(x, y + vspeed, obj_GrassPlatform)) {
+  var original_sprite = sprite_index;
+  
+  if(sprite_index == spr_aj_fall_loop) {
+    sprite_index = spr_aj_idle;
+  }
+  
   while(!place_meeting(x, y + sign(vspeed), obj_GrassPlatform)) {
     y += sign(vspeed);
   }
+  
+  sprite_index = original_sprite;
   
   vspeed = 0;
 }
@@ -218,11 +226,19 @@ if(place_meeting(x, y + vspeed, obj_GrassPlatform)) {
           <argument>
             <kind>1</kind>
             <string>/// Change sprite based on velocities
+image_speed = 1;
+
 if(abs(hspeed) &gt; 0) {
   image_xscale = sign(hspeed);
 }
 
-if(vspeed &gt; 0) {
+if(vspeed &lt; 0) {
+  if(sprite_index == spr_aj_jump &amp;&amp; image_index == 5) {
+    image_speed = 0;
+  } else {
+    sprite_index = spr_aj_jump;
+  }
+} else if(vspeed &gt; 0) {
   sprite_index = spr_aj_fall_loop;
 } else if(abs(hspeed) &gt; 0) {
   if(sprite_index == spr_aj_idle) {
