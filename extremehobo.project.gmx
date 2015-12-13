@@ -15,6 +15,7 @@
       <sprite>sprites\spr_aj_jump_end</sprite>
     </sprites>
     <sprites name="GrassBlocks">
+      <sprite>sprites\spr_GrassBlock0</sprite>
       <sprite>sprites\spr_GrassBlock1</sprite>
       <sprite>sprites\spr_GrassBlock2</sprite>
       <sprite>sprites\spr_GrassBlock3</sprite>
@@ -23,18 +24,30 @@
       <sprite>sprites\spr_GrassBlock6</sprite>
       <sprite>sprites\spr_GrassBlock7</sprite>
       <sprite>sprites\spr_GrassBlock8</sprite>
-      <sprite>sprites\spr_DirtBlock</sprite>
     </sprites>
-    <sprite>sprites\spr_RockBlock1</sprite>
-    <sprite>sprites\spr_RockBlock2</sprite>
+    <sprites name="RockBlocks">
+      <sprite>sprites\spr_RockBlock1</sprite>
+      <sprite>sprites\spr_RockBlock2</sprite>
+      <sprite>sprites\spr_RockBlock3</sprite>
+      <sprite>sprites\spr_RockBlock4</sprite>
+      <sprite>sprites\spr_RockBlock5</sprite>
+      <sprites name="RockBlockCorners">
+        <sprite>sprites\spr_RockCorner1</sprite>
+        <sprite>sprites\spr_RockCorner2</sprite>
+        <sprite>sprites\spr_RockCorner3</sprite>
+        <sprite>sprites\spr_RockCorner4</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Health">
-      <sprite>sprites\spr_health4_4</sprite>
-      <sprite>sprites\spr_health3_4</sprite>
-      <sprite>sprites\spr_health2_4</sprite>
-      <sprite>sprites\spr_health1_4</sprite>
-      <sprite>sprites\spr_health0_4</sprite>
+      <sprite>sprites\spr_Health4_4</sprite>
+      <sprite>sprites\spr_Health3_4</sprite>
+      <sprite>sprites\spr_Health2_4</sprite>
+      <sprite>sprites\spr_Health1_4</sprite>
+      <sprite>sprites\spr_Health0_4</sprite>
     </sprites>
-    <sprite>sprites\spr_grey_2x2</sprite>
+    <sprites name="Collision_Walls">
+      <sprite>sprites\spr_grey_2x2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -45,15 +58,46 @@
     <objects name="player">
       <object>objects\obj_MovementPlayer</object>
     </objects>
-    <object>objects\obj_GrassPlatform</object>
-    <object>objects\obj_Wall</object>
-    <object>objects\obj_DirtPlatform</object>
+    <objects name="GrassBlocks">
+      <object>objects\obj_GrassBlock0</object>
+      <object>objects\obj_GrassBlock1</object>
+      <object>objects\obj_GrassBlock2</object>
+      <object>objects\obj_GrassBlock3</object>
+      <object>objects\obj_GrassBlock4</object>
+      <object>objects\obj_GrassBlock5</object>
+      <object>objects\obj_GrassBlock6</object>
+      <object>objects\obj_GrassBlock7</object>
+      <object>objects\obj_GrassBlock8</object>
+    </objects>
+    <objects name="RockBlocks">
+      <object>objects\obj_RockBlock1</object>
+      <object>objects\obj_RockBlock2</object>
+      <object>objects\obj_RockBlock3</object>
+      <object>objects\obj_RockBlock4</object>
+      <object>objects\obj_RockBlock5</object>
+      <objects name="RockBlockCorners">
+        <object>objects\obj_RockCorner1</object>
+        <object>objects\obj_RockCorner2</object>
+        <object>objects\obj_RockCorner3</object>
+        <object>objects\obj_RockCorner4</object>
+      </objects>
+    </objects>
+    <objects name="Collision_Walls">
+      <object>objects\obj_Wall</object>
+    </objects>
+    <objects name="Health">
+      <object>objects\obj_Health4_4</object>
+      <object>objects\obj_Health3_4</object>
+      <object>objects\obj_Health2_4</object>
+      <object>objects\obj_Health1_4</object>
+      <object>objects\obj_Health0_4</object>
+    </objects>
     <object>objects\obj_Init</object>
   </objects>
   <rooms name="rooms">
     <rooms name="testing">
-      <room>rooms\room_movement_lab</room>
       <room>rooms\room_jump_tests</room>
+      <room>rooms\room_movement_lab</room>
     </rooms>
   </rooms>
   <help>
