@@ -93,6 +93,8 @@
       <object>objects\obj_Health0_4</object>
     </objects>
     <object>objects\obj_Init</object>
+    <object>objects\obj_Hud</object>
+    <object>objects\obj_Controller</object>
   </objects>
   <rooms name="rooms">
     <rooms name="testing">
