@@ -117,7 +117,7 @@
       <object>objects\obj_FeralKheral</object>
     </objects>
     <objects name="Chests">
-      <object>objects\obj_ChestUnopened</object>
+      <object>objects\obj_Chest</object>
       <object>objects\obj_ChestOpened</object>
     </objects>
     <objects name="Hobo">
