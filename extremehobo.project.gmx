@@ -47,6 +47,7 @@
     </sprites>
     <sprites name="Collision_Walls">
       <sprite>sprites\spr_grey_2x2</sprite>
+      <sprite>sprites\spr_grey_16x16</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
