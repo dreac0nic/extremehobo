@@ -17,6 +17,15 @@
     </sprites>
     <sprite>sprites\spr_GrassBlock</sprite>
     <sprite>sprites\spr_DirtBlock</sprite>
+    <sprite>sprites\spr_RockBlock1</sprite>
+    <sprite>sprites\spr_RockBlock2</sprite>
+    <sprites name="Health">
+      <sprite>sprites\spr_health4_4</sprite>
+      <sprite>sprites\spr_health3_4</sprite>
+      <sprite>sprites\spr_health2_4</sprite>
+      <sprite>sprites\spr_health1_4</sprite>
+      <sprite>sprites\spr_health0_4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -34,6 +43,7 @@
   <rooms name="rooms">
     <rooms name="testing">
       <room>rooms\room_movement_lab</room>
+      <room>rooms\room_jump_tests</room>
     </rooms>
   </rooms>
   <help>
