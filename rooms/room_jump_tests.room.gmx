@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
+  <colour>3684408</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -110,9 +110,6 @@
     <instance objName="obj_RockBlock4" x="688" y="368" name="inst_0A257BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_RockBlock5" x="320" y="288" name="inst_88A3B8E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Health4_4" x="64" y="128" name="inst_98616800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Health3_4" x="128" y="128" name="inst_27E4FC4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Health2_4" x="192" y="128" name="inst_2587E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Health1_4" x="256" y="128" name="inst_61CF1414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassBlock0" x="736" y="224" name="inst_B8D25BC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassBlock0" x="736" y="256" name="inst_DD15070F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassBlock0" x="736" y="192" name="inst_950B7682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -206,6 +203,9 @@
     <instance objName="obj_Wall" x="976" y="688" name="inst_FD12E3CF" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="944" y="720" name="inst_5D2C71A3" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_Wall" x="864" y="752" name="inst_FB659BC2" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hud" x="-32" y="608" name="inst_956EA199" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Controller" x="-32" y="640" name="inst_87ACD60F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Kheral" x="368" y="608" name="inst_7C6D5EA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="32" y="640" w="16" h="16" xo="0" yo="0" id="10000002" name="inst_AE725EFF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
