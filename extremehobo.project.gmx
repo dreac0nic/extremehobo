@@ -10,8 +10,7 @@
       <sprite>sprites\spr_aj_idle</sprite>
       <sprite>sprites\spr_aj_walk_init</sprite>
       <sprite>sprites\spr_aj_walk_loop</sprite>
-      <sprite>sprites\spr_aj_jump_init</sprite>
-      <sprite>sprites\spr_aj_jump_loop</sprite>
+      <sprite>sprites\spr_aj_jump</sprite>
       <sprite>sprites\spr_aj_fall_loop</sprite>
       <sprite>sprites\spr_aj_jump_end</sprite>
     </sprites>
@@ -35,6 +34,7 @@
       <sprite>sprites\spr_health1_4</sprite>
       <sprite>sprites\spr_health0_4</sprite>
     </sprites>
+    <sprite>sprites\spr_grey_2x2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,6 +46,7 @@
       <object>objects\obj_MovementPlayer</object>
     </objects>
     <object>objects\obj_GrassPlatform</object>
+    <object>objects\obj_Wall</object>
     <object>objects\obj_DirtPlatform</object>
     <object>objects\obj_Init</object>
   </objects>
