@@ -71,6 +71,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_InitGlobalVariables.gml</script>
+    <script>scripts\scr_SpringViewToPosition.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="player">
