@@ -75,7 +75,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_black)
+            <string>/// Draw FPS counter
+
+draw_set_color(c_black)
 draw_text(0,0,string(fps)) 
 </string>
           </argument>
