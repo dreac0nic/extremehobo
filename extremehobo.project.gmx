@@ -64,6 +64,10 @@
       <sprite>sprites\spr_TallerOldHoboRight</sprite>
       <sprite>sprites\spr_TallerOldHobo</sprite>
     </sprites>
+    <sprites name="Buttons">
+      <sprite>sprites\spr_ButtonOff</sprite>
+      <sprite>sprites\spr_ButtonOn</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_DirtGrassRocks</background>
@@ -125,6 +129,9 @@
       <object>objects\obj_ShortOldHobo</object>
       <object>objects\obj_TallerOldHobo</object>
       <object>objects\obj_TallerOldHoboRight</object>
+    </objects>
+    <objects name="Buttons">
+      <object>objects\obj_ButtonDoor1</object>
     </objects>
   </objects>
   <rooms name="rooms">
